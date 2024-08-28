@@ -1,0 +1,8 @@
+﻿# Desconsidera arquivos de cache
+node_modules/
+*.tmp
+*.log
+
+# Desconsidera arquivos de configuração
+.DS_Store
+.vscode/
