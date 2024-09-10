@@ -20,3 +20,23 @@ from django.urls import path
 urlpatterns = [
     path('admin/', admin.site.urls),
 ]
+
+from django.contrib import admin
+from django.urls import path, include
+from gestao_skills.gestao_skills import views  # Verifique se isso está correto
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('', include('gestao_skills.urls')), 
+]
+
+
+from django.urls import path
+from .. import views
+
+urlpatterns = [
+    path('', views.pagina_inicial, name='pagina_inicial'),
+    # Outras rotas podem ser adicionadas aqui
+]
+
+
